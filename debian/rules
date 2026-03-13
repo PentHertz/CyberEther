@@ -4,4 +4,4 @@
 	dh $@ --buildsystem=meson
 
 override_dh_auto_configure:
-	dh_auto_configure -- -Dtests=false -Dexamples=false
+	dh_auto_configure -- --wrap-mode=default -Dtests=false -Dexamples=false
