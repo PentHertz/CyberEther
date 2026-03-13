@@ -1,0 +1,43 @@
+Source: cyberether
+Section: science
+Priority: optional
+Maintainer: Sebastien Dudek <sebastien@penthertz.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ meson (>= 1.0.0),
+ ninja-build,
+ cmake,
+ pkg-config,
+ spirv-cross,
+ glslang-tools,
+ libglfw3-dev,
+ libvulkan-dev,
+ mesa-vulkan-drivers,
+ libsoapysdr-dev,
+ libgstreamer1.0-dev,
+ libgstreamer-plugins-base1.0-dev,
+ libgstreamer-plugins-bad1.0-dev,
+ libgstreamer-plugins-good1.0-dev,
+ gstreamer1.0-plugins-base,
+ python3-yaml
+Standards-Version: 4.6.2
+Homepage: https://cyberether.org
+Rules-Requires-Root: no
+
+Package: cyberether
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends:
+ mesa-vulkan-drivers,
+ gstreamer1.0-plugins-good,
+ gstreamer1.0-plugins-bad,
+ gstreamer1.0-plugins-ugly,
+ gstreamer1.0-libav,
+ soapysdr-module-rtlsdr
+Description: GPU-accelerated signal processing framework
+ CyberEther is a high-performance GPU-accelerated framework for real-time
+ signal visualization and data processing. It leverages low-level graphics
+ APIs (Vulkan, Metal, WebGPU) to achieve native performance on any platform.
+ .
+ Features include a modern flowgraph editor, low-latency remote interface,
+ and Python API for custom signal visualization via Superluminal.

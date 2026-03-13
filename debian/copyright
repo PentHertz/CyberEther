@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: CyberEther
+Upstream-Contact: Sebastien Dudek <sebastien@penthertz.com>
+Source: https://github.com/luigifcruz/CyberEther
+
+Files: *
+Copyright: CyberEther Authors
+License: MIT
