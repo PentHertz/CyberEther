@@ -35,7 +35,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            debhelper dh-meson devscripts fakeroot lintian \
+            debhelper devscripts fakeroot lintian \
             build-essential cmake pkg-config ninja-build meson git \
             spirv-cross glslang-tools libglfw3-dev \
             mesa-vulkan-drivers libvulkan-dev vulkan-validationlayers \
@@ -86,7 +86,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            debhelper dh-meson devscripts fakeroot lintian \
+            debhelper devscripts fakeroot lintian \
             build-essential cmake pkg-config ninja-build meson git \
             spirv-cross glslang-tools libglfw3-dev \
             mesa-vulkan-drivers libvulkan-dev vulkan-validationlayers \
@@ -142,7 +142,7 @@ jobs:
           run: |
             apt-get update
             apt-get install -y \
-              debhelper dh-meson devscripts fakeroot lintian \
+              debhelper devscripts fakeroot lintian \
               build-essential cmake pkg-config ninja-build meson git \
               spirv-cross glslang-tools libglfw3-dev \
               mesa-vulkan-drivers libvulkan-dev \
